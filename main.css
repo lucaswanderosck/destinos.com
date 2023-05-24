@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --first-color: #0b01b4;
+  --second-color: #263c70;
+  --third-color: #ebeef6;
+  --fourth-color: #3e5ea9;
+  --fifth-color: #43c850;
+}
+
+.text-colored {
+  color: var(--second-color);
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+header,
+footer,
+#sobre,
+#destinos {
+  background-color: var(--third-color);
+}
+
+header .navbar-brand {
+  color: var(--first-color);
+}
+
+header .navbar-brand:hover {
+  color: var(--first-color);
+  text-decoration: underline 2px var(--fifth-color);
+}
+
+header .nav .nav-link.active {
+  background-color: var(--second-color);
+}
+
+header .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-destinos .nav-link {
+  color: var(--fourth-color);
+}
+
+#em-alta .card {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#em-alta .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#em-alta .card img {
+  object-fit: cover;
+  transition: transform 3.2s ease;
+  -webkit-transition: transform 3.2s ease;
+}
+
+#em-alta .card:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1s);
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links li a {
+  text-decoration: none;
+}
+
+footer .container-fluid,
+#contato form button,
+.nav-destinos .nav-link.active {
+  background-color: var(--second-color);
+  color: white;
+}
+
+@media only screen and (max-width: 576px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
